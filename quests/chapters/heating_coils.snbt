@@ -1,0 +1,173 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "heating_coils"
+	group: "1C1C4FB2AFCF489D"
+	icon: "gtceu:cupronickel_coil_block"
+	id: "7C1306341997601D"
+	order_index: 1
+	quest_links: [
+		{
+			id: "709FB8C1561E7BB8"
+			linked_quest: "1646BF9194100E57"
+			x: -2.5d
+			y: -7.5d
+		}
+		{
+			id: "499941B0EDEFBF54"
+			linked_quest: "1C55AE6AD5BDE304"
+			x: -1.0d
+			y: -7.5d
+		}
+		{
+			id: "10F2DA9FCC5E3860"
+			linked_quest: "6B08799BCFD01D3D"
+			x: 0.5d
+			y: -7.5d
+		}
+		{
+			id: "72CBEEAD5A41685E"
+			linked_quest: "069FD86133D7D582"
+			x: 2.0d
+			y: -7.5d
+		}
+		{
+			id: "76C69275A82861C8"
+			linked_quest: "7A1E3C3A2D699C5B"
+			x: 3.5d
+			y: -7.5d
+		}
+		{
+			id: "6C144735C40EE615"
+			linked_quest: "2FCBA0D780DBDA9E"
+			x: 5.0d
+			y: -7.5d
+		}
+		{
+			id: "5FDCCB7CE9DACB34"
+			linked_quest: "4C7C0F6A6598BC24"
+			x: 6.5d
+			y: -7.5d
+		}
+		{
+			id: "4ACE1AFCEDC37A05"
+			linked_quest: "6AF3A40BC9CE7122"
+			x: 8.0d
+			y: -7.5d
+		}
+		{
+			id: "532482B324E31386"
+			linked_quest: "1776FA1F3255731E"
+			shape: "rsquare"
+			size: 0.66d
+			x: 3.5d
+			y: -6.5d
+		}
+		{
+			id: "0F86FC5CD130B2E1"
+			linked_quest: "78277DBC07D3C45C"
+			shape: "rsquare"
+			size: 0.66d
+			x: 5.0d
+			y: -6.5d
+		}
+		{
+			id: "7D227159C48FAB94"
+			linked_quest: "0DC999F79A685194"
+			shape: "rsquare"
+			size: 0.66d
+			x: 6.5d
+			y: -6.5d
+		}
+		{
+			id: "718938D16A6098A7"
+			linked_quest: "35F13B6D60361904"
+			shape: "rsquare"
+			size: 0.66d
+			x: 8.0d
+			y: -6.5d
+		}
+	]
+	quests: [
+		{
+			dependencies: [
+				"257DB4B39B2A928E"
+				"5B2696206205CB2E"
+			]
+			description: [
+				"不得不说，白铜锭看起来挺好吃的。"
+				""
+				"&l&3小知识：&r&o现实中，白铜通常含有一些其他元素比如铁或锰来增加强度。格雷科技里的白铜可能更像康铜（55:45铜:镍）。"
+			]
+			id: "70432F650591353C"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "严格来讲不同于康铜"
+			tasks: [{
+				id: "77875BBDC0A937A9"
+				item: "gtceu:cupronickel_ingot"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"2AD44111B9B39C90"
+				"4A92AFD2532EED26"
+			]
+			description: [
+				"&l&3小知识：&r&o你可能在家里就找得到坎塔尔合金。由于它极好的导热性和适中的电阻，坎塔尔合金经常出现在烤面包机和加热器中！"
+				""
+				"&o你肯定不希望你的土司机比你先到&bMV&f！"
+			]
+			id: "66805BB78A828C00"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "这就是我如何FeAlCr的"
+			tasks: [{
+				id: "76206DC9E7ABD07A"
+				item: "gtceu:kanthal_ingot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["6958029B5514D4EC"]
+			description: ["副标题注：正确的是Chrome Dome行动，nichrome是镍铬合金""""镍铬合金需要你的&a电力高炉&r至少为&6EV&r加上&b坎塔尔合金&r线圈才能启动。"]
+			id: "1CBA5477CB7C45E7"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Nichrome Dome行动"
+			tasks: [{
+				id: "1104AC52E0A0A472"
+				item: "gtceu:nichrome_ingot"
+				type: "item"
+			}]
+			title: "镍铬合金"
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"2F9D9AAB27E6534D"
+				"0B25A282F677744B"
+			]
+			description: ["副标题注：这句话改编自“The King is Dead, Long Live the King! ”，即“（旧）国王已死，（新）国王万岁！”。这是古时候欧洲新王即位的宣告，最初记载于查尔斯七世的继位。""""你马上就要开始&d铂&r的处理，或者叫“&b铂链&r”了，如果你想开始的话。"]
+			id: "3856DBCCAA6D2A58"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "钨钢已死，钌钨钼万岁。"
+			tasks: [{
+				id: "76DE4924186D83C2"
+				item: "gtceu:rtm_alloy_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.5d
+		}
+	]
+	subtitle: ["线圈脑袋"]
+	title: "加热线圈"
+}

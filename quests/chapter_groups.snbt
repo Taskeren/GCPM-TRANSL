@@ -1,0 +1,7 @@
+{
+	chapter_groups: [
+		{ id: "693226878D58638A", title: "拾级而上" }
+		{ id: "288DA1F92F7C0A7A", title: "教程+" }
+		{ id: "1C1C4FB2AFCF489D", title: "里程碑" }
+	]
+}

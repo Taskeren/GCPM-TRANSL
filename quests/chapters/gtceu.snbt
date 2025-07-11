@@ -1,0 +1,1656 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "square"
+	filename: "gtceu"
+	group: ""
+	icon: {
+		Count: 1
+		id: "gtceu:iron_wrench"
+		tag: {
+			Damage: 0
+			GT.Tool: {
+				Damage: 0
+			}
+		}
+	}
+	id: "2F8B0AFE317363C9"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"这个整合包是&b&l格雷科技现代版&r&r（也称为&aGTM&r）的指南，而它延续了&a格雷科技社区版&r——一个格雷科技的分支。"
+				""
+				"这个模组在直到&d极限压&r的每一级别中都提供了丰富的内容和不可忽视的&dQoL&r（注：quality_of_life，生活质量）的提高。"
+				""
+				"&aGTM&r将此模组更新到了&o（写下时）我的世界的&e最新版本&r。你可以使用默认热键&6F4&r打开任务书，但如果你不喜欢，也可以随时更改。"
+				"{@pagebreak}"
+				"这是一个&2纯净的&l科技&r&2整合包&r，主要关注格雷科技和它的发展线。玩了之后你就会发现这世上&6没有比这个整合包更好的地方&r来了解这个模组和它添加的所有功能！"
+				""
+				"你正在阅读的任务书&e信息量非常大&r，所以它可以协助你游玩这个整合包。所以如果你感到无所适从，就赶快来阅读它吧。它同时适用于&d老手&r和&b新手&r。"
+			]
+			icon: "kubejs:greg_icon"
+			id: "25289F9E8AE01C29"
+			rewards: [{
+				auto: "invisible"
+				icon: "minecraft:cooked_beef"
+				id: "6FD85EC9BD99C866"
+				item: "gtceu:sus_record"
+				title: "Steak"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.2d
+			subtitle: "我们祝您在这里度过一段快乐的时光"
+			tasks: [{
+				id: "6C1F570DB9013DE7"
+				title: "Welcome!"
+				type: "checkmark"
+			}]
+			title: "欢迎来到格雷科技社区版：非官方版！"
+			x: -0.75d
+			y: -1.5d
+		}
+		{
+			dependencies: ["25289F9E8AE01C29"]
+			description: [
+				""
+				"如果你熟悉格雷科技的话，你可能知道它对原版配方进行了&c许多削弱&r。GTCEu也一样——看看&e桶&r或&e纸张&r的配方吧。然而，我们不会在早期游戏中就那么疯狂，1个原木可以合成4块木板。&aHappy!&r"
+				""
+				"&o&7“我的冒险竟然从砍树开始！？嗯,我想格雷科技应该搞点事情的······”&r"
+			]
+			icon: "minecraft:oak_log"
+			id: "0EAF2C5B5EB755C5"
+			shape: "square"
+			size: 0.75d
+			subtitle: "和往常一样开始你的游戏吧"
+			tasks: [
+				{
+					count: 6L
+					id: "34F2867EAF0914BF"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					match_nbt: false
+					title: "任何原木"
+					type: "item"
+				}
+				{
+					id: "22B6D3C1033D47DA"
+					item: "minecraft:crafting_table"
+					type: "item"
+				}
+			]
+			title: "一切的缘起"
+			x: -0.75d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				"这里有一个&6精简&r的资源清单，包含了你早起游戏需要大量用到的物品。再多收集一些吧——你很快就会用完的，超额收集在&a格雷科技&r里是个很好的习惯。"
+				""
+				"我们实际上建议你&e优先完成此任务&r，这样你就可以收集&b奖励&r了。这样,你可以在被迫挖矿&4&l之前&r做一点主要的（读作：&o有趣的&r）进展了。"
+				""
+				"如果你是第一次接触&a格雷科技&r，八个熔炉可能看起来有点&c太多了&r，但相信我们······熔炉是没够的。"
+			]
+			icon: "minecraft:sugar_cane"
+			id: "0436F7B60BDEB091"
+			rewards: [{
+				count: 24
+				id: "2D2C971E9E651C2C"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "收集资源吧！"
+			tasks: [
+				{
+					count: 4L
+					id: "37DD7A28A3A7CB26"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "0F60FE32A8F7720E"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "23A44568A9FAACA2"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "00328CEF98F57407"
+					item: "gtceu:rubber_sapling"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1C05A84175DBD3A9"
+					item: "minecraft:furnace"
+					type: "item"
+				}
+			]
+			title: "我需要什么来推进进度？"
+			x: -0.75d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				""
+				"副标题注：打鼾（snore）后半部分是矿石（ore）。"
+				"&2格雷科技&r的矿石生成与原版或其他模组都大不相同。所有矿物将生成在&6巨大的矿脉&r中，而其中可能包含&d数百&r个矿石。"
+				""
+				"格雷科技现在有了原生的&d可视化勘探&r来帮你在地图上标记已发现的矿脉。对矿脉中的一个矿石方块&9右键&r即可以将其添加到地图中。你可以在全屏地图的左下角切换至矿脉视图。"
+				"{@pagebreak}"
+				"矿石生成的未删减版在技巧与窍门栏中，但这里有你所应知的全部事情："
+				""
+				"&9-&r矿脉会在&4网格&r中生成。每个矿脉都与其他矿脉东南西北相距(大约)3个区块。"
+				""
+				"&9-&r在你找到的每一个矿脉后，你可以放置&d传送点&r（默认为&4N&r），并标记其类型。这是一个很好的习惯，因为你可能想返回好几次。"
+			]
+			icon: "gtceu:cobaltite_ore"
+			id: "0C690272ED4FB1C3"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "更像是打鼾生成！"
+			tasks: [{
+				id: "3FA401CACE8BBE5D"
+				title: "哇，矿石确实听起来很令人兴奋。"
+				type: "checkmark"
+			}]
+			title: "矿石生成"
+			x: -2.25d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				"标题注：Lumber有两个意思，一个是伐木，一个是缓慢行进，所以这是个双关。"
+				""
+				"你知道&a格雷科技&r有自己的一套工具吗？如果不知道，你会高兴地得知它们&6&l超越&r了原版的变种。"
+				""
+				"让我们以GT斧为例。如果你用它挖一块原木，它就会为你砍倒&2整棵树&r。Timber!（注：这是一个古老的连锁砍树模组，字面上是木材的意思。）"
+				""
+				"持续的“lumberjacking”（注：这也是一个连锁砍树模组的名字。）会在几秒钟内耗尽掉斧的&9耐久&r，所以你可能想用&e更强的材料&r（比如&b钻石&r）来制作斧。但要小心，不要做成原版的钻石斧！"
+				""
+				"作为奖励，拿去这些&2云杉树苗&r来种大树吧。接下来你需要大量烧炼，而木板可以作为一个&d高效&r的燃料源暂时凑合一下！"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:steel_axe"
+				tag: {
+					Damage: 0
+					GT.Tool: {
+						Damage: 0
+					}
+				}
+			}
+			id: "13354F24F80F65FB"
+			rewards: [{
+				count: 8
+				id: "60E07F9D0763E8E1"
+				item: "minecraft:spruce_sapling"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "谁还要连锁挖矿？"
+			tasks: [{
+				id: "3880A08A72884627"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:aluminium_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 767
+										ToolSpeed: 8.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:vanadium_steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 1535
+										ToolSpeed: 5.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:naquadah_alloy_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										RelocateMinedBlocks: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 5
+										MaxDamage: 3071
+										ToolSpeed: 42.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:flint_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 63
+										ToolSpeed: 3.5f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:red_steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 2559
+										ToolSpeed: 9.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:blue_steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 1023
+										ToolSpeed: 17.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:rose_gold_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									Enchantments: [{
+										id: "minecraft:fortune"
+										lvl: 2s
+									}]
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 767
+										ToolSpeed: 14.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:hsse_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 4
+										MaxDamage: 3071
+										ToolSpeed: 7.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:iron_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 255
+										ToolSpeed: 4.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:titanium_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 1535
+										ToolSpeed: 10.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:neutronium_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										RelocateMinedBlocks: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 6
+										MaxDamage: 65534
+										ToolSpeed: 182.0f
+									}
+									HideFlags: 2
+									Unbreakable: 1b
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:duranium_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										RelocateMinedBlocks: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 5
+										MaxDamage: 8191
+										ToolSpeed: 16.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:bronze_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 191
+										ToolSpeed: 5.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:invar_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									Enchantments: [
+										{
+											id: "minecraft:efficiency"
+											lvl: 1s
+										}
+										{
+											id: "minecraft:bane_of_arthropods"
+											lvl: 3s
+										}
+									]
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 383
+										ToolSpeed: 6.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:sterling_silver_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									Enchantments: [{
+										id: "minecraft:smite"
+										lvl: 3s
+									}]
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 767
+										ToolSpeed: 5.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:cobalt_brass_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 1023
+										ToolSpeed: 4.5f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:tungsten_steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 4
+										MaxDamage: 2047
+										ToolSpeed: 11.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:damascus_steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									Enchantments: [{
+										id: "minecraft:fortune"
+										lvl: 3s
+									}]
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 1023
+										ToolSpeed: 8.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:tungsten_carbide_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 4
+										MaxDamage: 1023
+										ToolSpeed: 62.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:wrought_iron_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 2
+										MaxDamage: 383
+										ToolSpeed: 4.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:ultimet_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 4
+										MaxDamage: 2047
+										ToolSpeed: 12.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 511
+										ToolSpeed: 7.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:stainless_steel_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 1023
+										ToolSpeed: 9.0f
+									}
+									HideFlags: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "gtceu:diamond_axe"
+								tag: {
+									DisallowContainerItem: 0b
+									GT.Behaviours: {
+										DisableShields: 1b
+										TreeFelling: 1b
+									}
+									GT.Tool: {
+										Damage: 0
+										HarvestLevel: 3
+										MaxDamage: 767
+										ToolSpeed: 8.0f
+									}
+									HideFlags: 2
+								}
+							}
+						]
+					}
+				}
+				title: "任何斧"
+				type: "item"
+			}]
+			title: "Lumbering On"
+			x: -2.25d
+			y: -4.5d
+		}
+		{
+			dependencies: ["36DD94945D5B4A80"]
+			dependency_requirement: "one_completed"
+			description: [
+				"副标题注：Murder,_she_wrote（女作家与谋杀案）是一部电影的名字，而wrote（写）和wrought（锻铁的锻）差不多。"
+				""
+				"锻铁的碳含量很低，但这也足以使它比普通的铁更&b硬&r了。"
+				""
+				"用锻铁制作的&aGT&r工具比普通的铁做的&6多一半&r耐久。你可能想要使用锻铁直到解锁&2更好的&r工具为止。"
+				""
+				"你可以把铁粒烧炼成锻铁粒，然后再将它们重新合成锻铁锭。可别把你的铁用光了，因为这个过程&4&l不是&r可逆的。"
+				""
+				"这可能非常耗时，但放宽心，你很快就能解锁生产锻铁的&e更好&r方法的。"
+			]
+			icon: "gtceu:wrought_iron_ingot"
+			id: "563C96885A227C9F"
+			rewards: [{
+				count: 5
+				id: "3CDB383AFEBDB519"
+				item: "gtceu:wrought_iron_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "Murder, she Wrought"
+			tasks: [{
+				id: "3DAB1D757B3B049D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/wrought_iron"
+					}
+				}
+				title: "锻铁锭"
+				type: "item"
+			}]
+			title: "比铁还要好"
+			x: 0.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1ECBA1CBFFB9F625"]
+			description: [
+				"好了——你的首个&o正式&r的&aGT&r工具，但这只是个开始，之后还有&d很多&r。"
+				""
+				"GT工具可以用许多材料制作。用作合成时，它们&b不会被消耗&r，而是会消耗耐久。你可以从铁制工具开始——但如果你已经完成了那个任务，也可以选择锻铁工具。"
+				""
+				"&9&l锤子&r： 一种在许多早期的配方中需要的合成工具。它的次要功能是用它&m嘴一下&r右键机器以使其消音。"
+				""
+				"关于所有&aGT&r工具的注：你可以用工具本身的材料在铁砧上修复它们，就像修复原版工具一样。如果经验不足，现在你可以制作&e附魔之瓶&r了。"
+			]
+			id: "7DEB73FD649BDFB6"
+			rewards: [{
+				id: "6C50A2A3D43D3FEE"
+				item: "gtceu:iron_plate"
+				random_bonus: 2
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "你的首个GT工具！"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "gtceu:steel_hammer"
+					tag: {
+						Damage: 0
+						GT.Tool: {
+							Damage: 0
+						}
+					}
+				}
+				id: "1A4DDB914D7D2F3C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/hammers"
+					}
+				}
+				title: "任何锻造锤"
+				type: "item"
+			}]
+			title: "停！锤子时间到！"
+			x: 2.25d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2001CB4968D3E0A2"]
+			description: [
+				"这个锤子和用于合成的那个完全不同。它实际上可以作为&d3x3的镐&r来使用！"
+				""
+				"如果你熟悉&a&l匠魂&r的话，它和那个模组的锤子&e大差不差&r。"
+				""
+				"&b好好利用&r这些锤子吧！它们可以助你以&6破记录&r的时间扫荡整个矿脉。"
+				""
+				"&e注意：&r任何关于GT工具的任务都可以用任何材料的工具完成，而不只是上面展示的那个。"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:steel_mining_hammer"
+				tag: {
+					Damage: 0
+					GT.Tool: {
+						Damage: 0
+					}
+				}
+			}
+			id: "4A365A7CC9E374F9"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "挖掘得更有效率"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "gtceu:steel_mining_hammer"
+					tag: {
+						Damage: 0
+						GT.Tool: {
+							Damage: 0
+						}
+					}
+				}
+				id: "4F372C393ADC6CE2"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tools/mining_hammers"
+					}
+				}
+				title: "任何采矿锤"
+				type: "item"
+			}]
+			title: "往下锤！"
+			x: 2.25d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				"副标题注：独特的英文是ironic，而iron是铁的意思。"
+				""
+				"现实世界中，铁不&o仅仅&r可以作为纯铁矿石找到，相对地，它常常以&a各种各样&r的&e氧化物&r或&e矿物&r的形式存在。"
+				""
+				"你需要去收集足够的铁，因为你很快就会需要&9大量&r的铁了。如果你找不到的话，&a矿石生成&r任务有许多关于&e矿脉&r的信息。你还可以看看&2EMI&r中的矿石生成信息和矿物副产品列表栏。"
+				""
+				"所列出的任何一种粗矿都可以直接烧炼成铁。这意味着有&d四种不同的矿脉&r可以给出铁。"
+				""
+				"最后，&7走运&r的是时运对于GT矿石是&c无效&r的。"
+				"{@pagebreak}"
+				"在&b装了模组的我的世界&r中，解锁某种&a加倍产矿&r的方法之前，多囤一点矿石可能是一种普遍的做法，但你目前不用管那些乱七八糟的矿物处理。鉴于&e下矿&r可以很容易地获得大量的矿石，直接烧炼在很长&o很长&r的时间里仍是一种效率最高的方法。"
+				""
+				"收集&l&c任何&r所列出的&d粗矿&r来完成这个任务！"
+			]
+			icon: "minecraft:iron_ingot"
+			id: "1ECBA1CBFFB9F625"
+			rewards: [{
+				count: 32
+				id: "5CD664F60E977214"
+				item: "gtceu:magnetite_ore"
+				type: "item"
+			}]
+			size: 0.75d
+			subtitle: "它独特吧······你不觉得吗？"
+			tasks: [{
+				id: "063705687ED657F5"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:raw_iron"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_yellow_limonite"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_magnetite"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_basaltic_mineral_sand"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_granitic_mineral_sand"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_pyrite"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_goethite"
+							}
+							{
+								Count: 1b
+								id: "gtceu:raw_hematite"
+							}
+						]
+					}
+				}
+				title: "含铁矿石"
+				type: "item"
+			}]
+			title: "铁，铁，铁！"
+			x: 0.75d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7DEB73FD649BDFB6"]
+			description: [
+				"推进度还需要更多的GT工具，这是其中比较重要的。"
+				""
+				"&9&l扳手：&r一个合成工具，也是破坏GT机器的正确工具······如果你觉得用镐子太不人道的话就完美了。它也可以兼作其他模组的&6扳手&r使用。右键可以设置GT机器的输出面，而潜行右键点击可以旋转机器。"
+				""
+				"&9&l锉：&r一种合成工具······就这些了。耶！"
+				""
+				"&9&l锯：&r又是一个合成工具。如果我们是个恶人，也可以强迫它从各自的配方中获得4个木板和4个木棍。也就是说它可以让你可以从每个原木获得&a6个木板&r。"
+				"{@pagebreak}"
+				"&e注意：&r任何关于GT工具的任务都可以用任何材料的工具完成，而不只是上面展示的那个。"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_wrench"
+				tag: {
+					Damage: 0
+					GT.Tool: {
+						Damage: 0
+					}
+				}
+			}
+			id: "2001CB4968D3E0A2"
+			shape: "square"
+			size: 0.75d
+			tasks: [
+				{
+					id: "54E092F42DA65B86"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/wrenches"
+						}
+					}
+					title: "任何扳手"
+					type: "item"
+				}
+				{
+					id: "4D6B7E2B4C8E5747"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/files"
+						}
+					}
+					title: "任何锉"
+					type: "item"
+				}
+				{
+					id: "23D6CF49FC7E82A9"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/saws"
+						}
+					}
+					title: "任何锯"
+					type: "item"
+				}
+			]
+			title: "重要工具"
+			x: 3.75d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2001CB4968D3E0A2"]
+			description: [
+				"更多工具——它们现在不是非常重要，但总会在某些时候用到。"
+				""
+				"&9&l螺丝刀：&r一个合成工具，也可用于调整特定的机器和覆盖板。"
+				""
+				"&9&l剪线钳：&r一个合成工具，可以用来连接导线。右键导线可以使导线和方块连接或断开。"
+				""
+				"&9&l研钵：&r一个合成工具，可以将许多东西磨成对应的粉。"
+				""
+				"&9&l刀：&r一个普通的武器，但也是······&o你猜对了&r，一个合成工具！"
+				""
+				"&9&l软锤：&r一个工具，右键可以激活或关闭机器。"
+				"{@pagebreak}"
+				"还有一些很小众的工具，但值得一提。"
+				""
+				"&9&l撬棍：&r一个有用的工具，可以通过右键来从&aGT&r机器上移除覆盖板。"
+				""
+				"&9&l镰刀：&r一个强大的农业工具，可以自动收获并复种一片区域。竟然也是一个好武器！"
+				""
+				"&9&l搋子：&r用于清理GT&a机器中卡住的流体。"
+				""
+				"&9&l屠刀：&r一个自带&6掠夺III&r的工具。你可能想用它来收集皮革和食物。"
+				"{@pagebreak}"
+				"&e&l注意：&r这个任务的奖励是&3大马士革钢&r——一种只能作为战利品获得的稀有材料。它的性能远超你目前所拥有的材料，所以一定要好好利用它。"
+			]
+			icon: {
+				Count: 1
+				id: "gtceu:iron_screwdriver"
+				tag: {
+					Damage: 0
+					GT.Tool: {
+						Damage: 0
+					}
+				}
+			}
+			id: "5C3501DD3B4788FA"
+			rewards: [{
+				count: 16
+				id: "433F0ED89B586383"
+				item: "gtceu:damascus_steel_ingot"
+				type: "item"
+			}]
+			size: 0.75d
+			tasks: [
+				{
+					id: "4055931FAD6A5087"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/screwdrivers"
+						}
+					}
+					title: "任何螺丝刀"
+					type: "item"
+				}
+				{
+					id: "0CB546DCA11BB335"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/wire_cutters"
+						}
+					}
+					title: "任何剪线钳"
+					type: "item"
+				}
+				{
+					id: "4DF1C23D7DD1FAD6"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/mortars"
+						}
+					}
+					title: "任何研钵"
+					type: "item"
+				}
+				{
+					id: "397DD831CA0665E7"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/knives"
+						}
+					}
+					title: "任何刀"
+					type: "item"
+				}
+				{
+					id: "1BFE642ED0595A93"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:tools/mallets"
+						}
+					}
+					title: "任何软锤"
+					type: "item"
+				}
+			]
+			title: "更多工具"
+			x: 5.25d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2001CB4968D3E0A2"]
+			description: [
+				"&e&l焦炉&r很可能是你的第一个&aGT&r多方块结构。恭喜！"
+				""
+				"它可以把&e煤&r做成&a焦炭&r，或者把&e木头&r做成&a木炭&r。此外还可以生成&d杂酚油流体&r作为&3额外&r输出。"
+				""
+				"你可以在EMI中查看&6多方块预览&r栏（在任何多方块结构的控制器方块上按&dU&r！）来查看结构。"
+				"{@pagebreak}"
+				"&9注意：&r&l任何&r砖块都可以被&3焦炉仓&r替换，但最多五个。"
+				""
+				"焦炉仓允许自动化，它会&d自动输出&r流体和物品！它还可以用于给焦炉提供输入(你可以用漏斗实现)。"
+				""
+				"如果焦炉的&e木焦油&r满了而你却用不到，打掉焦炉方块再放回去吧。之后会有&3流体自动销毁&r的。"
+				"{@pagebreak}"
+				"&l&3小知识：&r&o多方块结构的概念其实在我的世界模组中出现得很早，比如IC2的核反应堆，铁路的焦炉。当时它们都是革命性的进步。&r"
+			]
+			icon: "gtceu:coke_oven"
+			id: "4946FC5BCA4CCA88"
+			min_required_dependencies: 1
+			rewards: [{
+				id: "60891A0DEF29E9A1"
+				item: "gtceu:exquisite_coke_gem"
+				random_bonus: 2
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.2d
+			subtitle: "你的第一个大型项目······希望如此"
+			tasks: [{
+				id: "3545479A7C09CDFC"
+				item: "gtceu:coke_oven"
+				type: "item"
+			}]
+			title: "焦炉"
+			x: 5.25d
+			y: -4.5d
+		}
+		{
+			dependencies: ["2001CB4968D3E0A2"]
+			description: [
+				"资源是多多益善的。你马上要进入进入&6蒸汽时代&r了——很多&6蒸汽&r机器都需要铜和锡，所以看看矿脉栏，找到它们的来源，然后下矿去吧！"
+				""
+				"如果矿石名称让你&b有点迷糊&r，你可以参阅提示框里的&d分子式&r来看看矿石中含有哪些元素。铜是&oCu&r，锡是&oSn&r，铁是&oFe&r，其他元素可以参考&3元素周期表&r。是时候捡起来你早就还给化学老师的知识了——你&l以后&r会需要它们的。"
+				""
+				"这个任务可以使用&9任意一种金属&r完成，所以你可以领取你苦苦寻觅的另一种金属作为奖励，但你得马上找到二者的来源，因为你得有&a&o特定的&r&a铜锡合金&r才能通过&6蒸汽时代&r。"
+			]
+			icon: "minecraft:copper_ingot"
+			id: "45969FFBF88F4FBB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2C28FA1A5275D24E"
+				table_id: 1702176335602373230L
+				type: "choice"
+			}]
+			size: 0.75d
+			subtitle: "收集更多资源！"
+			tasks: [{
+				count: 32L
+				id: "616556ECE4DB6103"
+				item: {
+					Count: 32
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:copper_ingot"
+							}
+							{
+								Count: 1b
+								id: "gtceu:tin_ingot"
+							}
+						]
+					}
+				}
+				title: "32个铜或锡"
+				type: "item"
+			}]
+			title: "走向青铜时代！"
+			x: 3.75d
+			y: -1.5d
+		}
+		{
+			dependencies: ["45969FFBF88F4FBB"]
+			description: [
+				"&6青铜&r是铜和锡的&2合金&r。将3份铜和1份锡磨成粉，然后合成并烧炼它们。如果你压根不知道这是如何实现的，可以查看&o “&d更多工具&r&o ”&r任务。"
+				""
+				"你需要制作比这个任务&a更多&r的青铜锭。这是&6蒸汽时代&r的主要材料，你需要很多很多。"
+				""
+				"&6&l后续蒸汽时代章节。&r"
+				"{@pagebreak}"
+				"&l&3小知识：&r&o真实的青铜其实比较接近七份铜和一份锡，但为了游戏平衡，在这里（绝大多数我的世界模组！）必须被&4改掉&r。像这样的例子还有很多——&e这里没有现实主义&f。"
+			]
+			icon: "gtceu:bronze_ingot"
+			id: "315DBB3B23F95E0D"
+			rewards: [{
+				count: 32
+				id: "5F229B651404DF0E"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.3d
+			subtitle: "人类的第一个合金——也是你的！"
+			tasks: [{
+				count: 24L
+				id: "39AEA2923971A2B5"
+				item: "gtceu:bronze_ingot"
+				type: "item"
+			}]
+			title: "青铜时代？不，&6蒸汽时代&r！"
+			x: 5.25d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7DEB73FD649BDFB6"]
+			description: [
+				"桶的合成配方被&d&l魔改&r了。现在需要板了——&o哇哦&r."
+				""
+				"&a格雷科技&r中使用板的地方&b非常多&r。你可以用你崭新的&9锻造锤&r把两个锭在工作台上锤成板。这个比例有点&c贵&r，但以后会有更好的板的配方的。"
+				""
+				"把这个装满&b水&r的&6木桶&r领了吧。嗯······有点奇怪？我们只是想让你知道&aGTCEu&r的所有储罐都是可携带的。"
+			]
+			icon: "minecraft:bucket"
+			id: "592BD683A48C2AA2"
+			rewards: [{
+				id: "68D4ECFA9AD5349A"
+				item: {
+					Count: 1
+					id: "gtceu:wood_drum"
+					tag: {
+						Fluid: {
+							Amount: 16000L
+							FluidName: "minecraft:water"
+						}
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "#现实主义"
+			tasks: [{
+				id: "5DD165E4EB34C022"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			title: "格雷来了"
+			x: 2.25d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				"好吧，我们慷慨地保持木头到木板的比例&c不变&r，但毕竟这里是格雷科技——熔炉&4&l不能&r制作木炭。你需要做一个&d&l焦炉&r才能获得&6木炭&r。"
+				""
+				"木板依然是极好的&6炉料&r，毕竟你可以从一个原木中获得&l&3四个&r嘛。"
+				""
+				"如果这让你感到不太舒服，你可以在&aGTCEu&r配置文件中&b恢复&r到原版的机制，但是这有一个bug。你需要删除&bkubejs/server_scripts&r里的“charcoal.js”脚本才能&e关闭&r这个削弱。"
+			]
+			icon: "minecraft:charcoal"
+			id: "36DD94945D5B4A80"
+			rewards: [{
+				count: 16
+				id: "5408859E43668198"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "不是这！"
+			tasks: [{
+				count: 48L
+				id: "3DF01E4FACBB1D53"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:logs"
+					}
+				}
+				title: "我们需要更多原木"
+				type: "item"
+			}]
+			title: "木炭？"
+			x: 0.75d
+			y: -1.5d
+		}
+		{
+			dependencies: ["45969FFBF88F4FBB"]
+			description: [
+				"在这个&b轻量&r的整合包中，我们已经有了足够的QoL来满足你的需求&o（希望如此）&r，这个包本身就&a可玩性极强&r。"
+				""
+				"&d储物抽屉&r和&d应用能源2&r被加进去之后可以帮助你进行&e储存&r和&6物流&r。我们修改了它们的配方来适应进度，但你肯定不会花费50个小时来制作第一个&5分子组装机&r的。这里还有一些其他模组给你提供一些&a有用的QoL&r。"
+				"{@pagebreak}"
+				"但你想要······&o更多&r？"
+				""
+				"如果你玩单机的话，就可以随意&a添加模组&r了。更多的&bQoL&r还不错······更多的&3科技&r可以给你更大的满足······甚至一点点&5魔法&r，只要你不添加&e等价交换&r就行。拉钩？"
+				""
+				"在&aGTCEu&r1.12.2的版本中，有很多&aGT&r插件有可能会被移植到1.19.2的版本。放心吧，如果它们做到了这个版本，这个整合包将尽&d最大努力&r与它们兼容。"
+			]
+			icon: "minecraft:structure_void"
+			id: "1283B4D7B5D82193"
+			rewards: [{
+				id: "460EC827273306A5"
+				item: "storagedrawers:quantify_key"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "在安装装饰工艺的路上"
+			tasks: [{
+				id: "70C69E5432F6C3BE"
+				title: "I accept responsibility for any mod conflicts ;)"
+				type: "checkmark"
+			}]
+			title: "更多模组？"
+			x: 2.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45969FFBF88F4FBB"]
+			description: [
+				"别担心，这些东西真的很有用——你以后需要多制作&e成百上千个&r的。从现在开始养成好习惯吧。"
+				""
+				"你最好熟悉&o“&b批量合成&r&o”&r的概念——如果你只需要1个板，但你一下子做了8个等等。这意味着你会持有很多这些&d中间产品&r用于未来的合成。现在制作&a一堆杆&r或&a螺丝&r可能看起来不太明智，但它们会在未来用到，从而节省你大量的套娃的时间。"
+				""
+				"如果你还&6没有&r被说服的话，看一下这个任务的&d奖励&r吧。"
+			]
+			icon: "minecraft:bone_meal"
+			id: "49A04E63F40D65C0"
+			rewards: [
+				{
+					count: 64
+					id: "6292C644EE1ACA59"
+					item: "minecraft:bone_meal"
+					type: "item"
+				}
+				{
+					count: 12
+					id: "380C42204033B5C4"
+					item: "minecraft:potato"
+					type: "item"
+				}
+				{
+					count: 128
+					id: "725FA988559A2A06"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					id: "650805CC3324B1A2"
+					item: {
+						Count: 1
+						id: "gtceu:iron_shovel"
+						tag: {
+							Damage: 0
+							GT.Tool: {
+								Damage: 0
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2B1124C773D1E30F"
+					item: {
+						Count: 1
+						id: "gtceu:iron_axe"
+						tag: {
+							DisallowContainerItem: 0b
+							GT.Behaviours: {
+								DisableShields: 1b
+								TreeFelling: 1b
+							}
+							GT.Tool: {
+								Damage: 0
+								HarvestLevel: 2
+								MaxDamage: 255
+								ToolSpeed: 4.0f
+							}
+							HideFlags: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "发挥你的套娃才能吧！"
+			tasks: [
+				{
+					count: 16L
+					id: "36052E42DE641787"
+					item: "gtceu:iron_bolt"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "63F1C7989ADF097F"
+					item: "gtceu:iron_plate"
+					type: "item"
+				}
+			]
+			title: "小小的力量测试"
+			x: 3.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45969FFBF88F4FBB"]
+			description: [
+				"铁、铜和锡只能带你走到这一步了。在&6蒸汽时代&r中，你时不常会用到&4红石&r和&b钻石&r，而镍、铅和银也值得一做。这些&a很快&r就都会派上用场。"
+				""
+				"&o&8如果你找不到这些材料，请查看矿物栏！&r"
+			]
+			icon: "gtceu:silver_ingot"
+			id: "62212F2B51AC779E"
+			rewards: [
+				{
+					count: 128
+					id: "2C6F42288FF9B7DA"
+					item: "minecraft:sand"
+					type: "item"
+				}
+				{
+					count: 128
+					id: "5242721C19BCC092"
+					item: "minecraft:clay_ball"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "04BE5FBBF9402D5D"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 24
+					id: "2D409B8436727D1C"
+					item: "gtceu:nickel_ingot"
+					type: "item"
+				}
+				{
+					count: 24
+					id: "35EE3F4BAAE41AC3"
+					item: "gtceu:lead_ingot"
+					type: "item"
+				}
+				{
+					count: 24
+					id: "70008D5488014AF1"
+					item: "gtceu:silver_ingot"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "29963CB493F50CC0"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "有时，低效······才能让你高效！"
+			tasks: [
+				{
+					count: 64L
+					id: "37A7D2DE2F82E529"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "68684E4712C05221"
+					item: "gtceu:nickel_ingot"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "59AA0604B02D17EF"
+					item: "gtceu:lead_ingot"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "0384FDE2E9B1414F"
+					item: "gtceu:silver_ingot"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "46C1361E3C1678C4"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			title: "早期投资"
+			x: 5.25d
+			y: 0.0d
+		}
+		{
+			description: [
+				"请你一定要&a认真&r阅读&l这个&r任务——它包含了一些在整个游戏过程中都很有用的&d重要信息&r。"
+				""
+				"类似于这样的信息类任务会出现在对应的章节中。如果你觉得自己忘了什么，也可以查看&b“指南和更多”&r任务栏。"
+				""
+				"任务的安排旨在引导你完成&a格雷科技&r进程的所有主要里程碑。每个任务都对你有一些&2好处&r——我们会明确告知你某些内容是100％可选的，所以不用担心遗漏什么重要内容。"
+				"{@pagebreak}"
+				"这个整合包&d和平可玩&r——事实上，我们也强烈建议你这样做，因为对于敌对生物对进程几乎没有好处。你也可以凭喜好使用&o/keepInventory&r（注：也叫死亡不掉落、保留物品栏）、&o/sethome&r和小地图传送。"
+				""
+				"虽然我们不会强制你打开这些设置，但我们&4并不&r打算让这个模组包给出惩罚性的&e生存&r体验，而是帮你掌握&aGTCEu&r的一切。"
+				"{@pagebreak}"
+				"最后，&l掌握&r&eEMI&r的使用方法是个好习惯。&aGT&r物品通常有多个配方，所以你不应该停在&eEMI&r显示的第一个配方上。”专业“的&eEMI&r用法涉及在自动生成的配方中&b识别出规律&r（例如：所有与铁有关的物品都可以&6磨&r成铁粉）。"
+				""
+				"当出现复杂的配方时——我们不会避讳，&aGTCEu&r可能让人望而生畏——我们一定会引导你走更&5高效的路线&r。但是，我们鼓励你自己多多实验。跟着任务书机械地完成任务没有什么乐趣，不是吗？"
+			]
+			icon: "ftbquests:book"
+			id: "13E9DF7E980CFC5B"
+			shape: "circle"
+			size: 0.75d
+			subtitle: "读一遍，再读一遍！"
+			tasks: [{
+				id: "04CC2E592A648F06"
+				title: "我已经多次阅读了这一页"
+				type: "checkmark"
+			}]
+			title: "重要信息"
+			x: -2.25d
+			y: -1.5d
+		}
+		{
+			dependencies: ["2001CB4968D3E0A2"]
+			description: [
+				"合成很快就会让人感到&e疲惫&r。利用你&2崭新的锯&r来制作这个合成站如何呀？"
+				""
+				"它可以让你用相邻容器中的物品进行合成，使得经典的&aGT&r套娃变得不那么&4冗长乏味&r。"
+				""
+				"你也可以再用锯锯一次合成站，让它变成一个更低的半砖（注：也叫台阶）版本。"
+			]
+			icon: "craftingstation:crafting_station"
+			id: "411AB552514EA14C"
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "不，这个整合包里没有匠魂"
+			tasks: [{
+				id: "30D40010C8E6E115"
+				item: "craftingstation:crafting_station"
+				type: "item"
+			}]
+			title: "合成站"
+			x: 3.75d
+			y: -4.5d
+		}
+		{
+			description: [
+				"这个整合包更新之后新增了一个&d指南和更多&r栏。你可以随时查看其中的信息，但每当你需要它的时候，你就会被&6指引到它&r然后略读一二。"
+				""
+				"如果您想&a更深入&r地了解&bGTCEu&r的机制，则可以在其中找到有关的信息——并且在一些情况下它是不可或缺的。"
+				""
+				"可以解锁新章节的任务的底部描述带有&6橙色描述&r。"
+				""
+				"好好阅读吧!"
+			]
+			icon: "minecraft:lectern"
+			id: "008ABF78E56209F7"
+			shape: "circle"
+			size: 0.75d
+			subtitle: "助你成功的技巧和窍门"
+			tasks: [{
+				id: "382566FB9E8CFE29"
+				title: "好了,我知道了，知道啦"
+				type: "checkmark"
+			}]
+			title: "以教学为中心"
+			x: -0.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0EAF2C5B5EB755C5"]
+			description: [
+				"标题注：这是美国著名说唱歌手肯德里克·拉马尔《Money_Tree》里的一句歌词。"
+				""
+				"你可以在&a森林&r、&2丛林&r或&a沼泽&r生物群系（注：也叫群落）中找到橡胶树。"
+				""
+				"你可以通过砍倒橡胶树来获得&6粘性树脂&r，而它在之后会非常有用。"
+				""
+				"橡胶木也会在未来提供一些&d有用的资源&r。"
+			]
+			id: "5193DD03C0742548"
+			rewards: [{
+				id: "4D70B6467A188FDD"
+				item: "gtceu:sticky_resin"
+				random_bonus: 3
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 0.66d
+			subtitle: "不，这不是IC2"
+			tasks: [{
+				count: 8L
+				id: "76851CD51E99CA38"
+				item: "gtceu:rubber_sapling"
+				type: "item"
+			}]
+			title: "在橡胶树下遮荫"
+			x: 0.75d
+			y: -4.5d
+		}
+		{
+			description: [
+				"觉得这个整合包&a太容易&r了？你想要一些可以更加深入地探索的内容吗？"
+				""
+				"我们在这个任务里会向你推荐一些GTM整合包。"
+				"{@pagebreak}"
+				"&l宇宙前沿"
+				"-&7Ghostipedia等"
+				""
+				"&d宇宙前沿&r是一个比这个整合包&b难一点&r的1.20.1整合包，关注于GTM和和其他模组的互动。你可以在头顶的星辰大海中探索，去脚下的万丈深渊里旅行，同时处理&e精细设计&r、统揽&7机械&r与&7神秘&r的进程。"
+				""
+				"目前这个包还处在&2早期测试&r阶段，但它已经做到了&3LuV&r。总之，这会是个独一无二的体验！"
+				"{@pagebreak}"
+				"&lATM：Gravitas²"
+				"-&7ATM团队"
+				""
+				"从&6原始的石器时代&r开始，手工制作工具和采集食物，你在不同时代的丝滑衔接中可以同时体验到许多&b经典和新兴&r的模组，包括群峦传说、机械动力：电气时代、星门之旅以及&8（显然）&r 格雷科技等等。"
+				""
+				"你将发现自己会从一个&2原始的起点&r，石头相碰、擦出火花，过渡到原子对撞、创造元素，很快就是&d推动&r向着星辰大海的旅途！"
+				"{@pagebreak}"
+				"&l星空科技"
+				"-&7trulyno"
+				""
+				"&6星空科技&r是一个比较悠闲的格雷科技&d空岛整合包&r。这里你是一名科学家，在一个次元航行&4灾难性地失败&r之后被困在了&b平行宇宙&r里。"
+				""
+				"这个整合包的进程可以带你达到并超越&3UHV&r，伴随着数不胜数的&a星门&r，甚至还有一个重新&o“格雷化”&r的神秘农业。"
+				""
+				"需要注意的是，这个模组仍在进行&e重度开发&r之中，但在BETA1版本之后你应该能够获得&o“经典星门 ”&r了！"
+			]
+			icon: "minecraft:netherite_upgrade_smithing_template"
+			id: "63DC162144871509"
+			shape: "circle"
+			size: 0.75d
+			tasks: [{
+				id: "3E3D67B53234AD1A"
+				title: "哇，听起来好酷。"
+				type: "checkmark"
+			}]
+			title: "我还能玩什么？"
+			x: -2.25d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C690272ED4FB1C3"]
+			description: [
+				"在地表嬉戏的时候，你可能发现了一些像小石子一样的&d地表指示物&r。"
+				""
+				"这些小东西标示了下方矿脉的种类。只用右键&7（或挖掘！）&r这些地表指示物就可以获得对应的&a小撮粉&r。这也会把这个矿脉加入你的小地图。"
+				""
+				"你现在可以用&2EMI&r来了解你脚下矿脉的更多信息了。只用在你刚获得的小撮粉上按&dU&r，找到&6矿石页&r，就可以看到关于生成&b矿石的种类&r、&3生成模式&r、&e生成维度&r、&dY轴范围&r以及&a生成权重&r（即生成它的几率）等一系列细节了。"
+			]
+			icon: "gtceu:cobalt_indicator"
+			id: "3296B815876C3181"
+			shape: "circle"
+			size: 0.5d
+			subtitle: "唤醒你心中的地质学家吧！"
+			tasks: [{
+				id: "3C54F075FEE53897"
+				title: "I love prospecting!"
+				type: "checkmark"
+			}]
+			title: "这个石子！"
+			x: -2.25d
+			y: -2.25d
+		}
+	]
+	subtitle: ["欢迎来到&6GCPM&r！很高兴在这里见到你。"]
+	title: "介绍"
+}
