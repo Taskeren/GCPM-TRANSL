@@ -286,7 +286,7 @@
 				"5E76D4C24026157D"
 			]
 			description: [
-				"副标题注：这是Nomifactory的一件物品，英文是“Micro Miner”。"
+				"副标题注：这是Nomifactory的一件物品，英文是“Micro_Miner”。"
 				""
 				"&e微型&r电路是&3超净间&r成为必需的地方。"
 				""
@@ -415,9 +415,9 @@
 				""
 				"&c电子电路&r是投入产出比“最差的”，但你需要从这里开始。"
 				""
-				"&e集成逻辑电路&r是&c电子电路&r和&2微型处理器&r的中间层。"
+				"&e集成电路&r是&c电子电路&r和&2微芯片处理器&r的中间层。"
 				""
-				"最后&2微型处理器&r是游戏之后的首选。"
+				"最后&2微芯片处理器&r是游戏之后的首选。"
 			]
 			hide_dependency_lines: true
 			icon: "gtceu:lv_machine_casing"
