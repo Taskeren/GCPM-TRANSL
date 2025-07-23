@@ -17,10 +17,10 @@
 
 如果更新不及时还请谅解。
 ## 预览图
-![QUESTLINE](main/picture/1.png)
+![QUESTLINE](/pictures/1.png)
 
-![矿石生成](main/picture/2.png)
+![矿石生成](/pictures/2.png)
 
-![聚变反应堆I](main/picture/3.png)
+![聚变反应堆I](/pictures/3.png)
 
-![基础化学浸洗机](https://github.com/CodinSnow/GCPM-TRANSL/blob/main/picture/4.png)
+![基础化学浸洗机](/pictures/4.png)
