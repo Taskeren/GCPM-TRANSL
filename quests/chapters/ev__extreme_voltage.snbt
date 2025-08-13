@@ -118,7 +118,7 @@
 				"30A6EDDF25A5E5F8"
 			]
 			description: [
-				"从现在开始，&3能源&r和&3动能仓&r可以升级成&d4A&r的了。"
+				"从现在开始，你可以合成&dEV&r的&3能源&r和&3动能仓&r了！在&dEV&r时代，能源仓有了4A、16A、32A甚至64A的变种！"
 				""
 				"它对于多方块发电机很有用，或者增益你的GCYM机器。"
 			]
@@ -467,7 +467,7 @@
 			description: [
 				"&a钨钢&r50%的组分是钢······不消说，你需要大量的&a铁&r和&a钨&r！"
 				""
-				"现在你得用它做&3能源/动能仓&r。你离讨厌的单方块发电机更远了一步！"
+				"目前&a钨钢&r是下一等级线圈的必要组分。你离讨厌的单方块发电机更远了一步！"
 				""
 				"之后给&3电力高炉&r加速就需要&e氦&r了。你一开始可以&a提取独居石&r或&a离心末地石&r。"
 				""
@@ -1979,7 +1979,7 @@
 			]
 			icon: {
 				Count: 1
-				id: "gtceu:avanced_nanomuscle_chestplate"
+				id: "gtceu:advanced_nanomuscle_chestplate"
 				tag: {
 					Damage: 0
 				}
@@ -1993,7 +1993,7 @@
 				id: "3D2600C788928F76"
 				item: {
 					Count: 1
-					id: "gtceu:avanced_nanomuscle_chestplate"
+					id: "gtceu:advanced_nanomuscle_chestplate"
 					tag: {
 						Damage: 0
 					}

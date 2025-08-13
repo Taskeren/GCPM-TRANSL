@@ -364,6 +364,8 @@
 				"就像蒸汽多方块结构——我希望你做了！——你需要&3总线&r来输入/输出物品。"
 				""
 				"对于流体，你就需要&3仓&r了。更高等级的&3仓/总线&r会有更多格子。"
+				""
+				"&9小提示：&r你可以在手持&2螺丝刀&r（并且副手为空）的时候对着&3仓&r或&3总线&r下蹲右键来改变它的I/O朝向。"
 			]
 			icon: "gtceu:lv_input_bus"
 			id: "0C09F89291D29EF8"
@@ -432,7 +434,7 @@
 				type: "checkmark"
 			}]
 			title: "关于超净间"
-			x: 0.33d
+			x: 0.0d
 			y: 1.98d
 		}
 		{
@@ -461,7 +463,7 @@
 				type: "checkmark"
 			}]
 			title: "理解装配线"
-			x: 1.32d
+			x: 0.99d
 			y: 1.98d
 		}
 		{
@@ -486,7 +488,7 @@
 				title: "研究"
 				type: "checkmark"
 			}]
-			x: 2.31d
+			x: 1.98d
 			y: 1.98d
 		}
 		{
@@ -568,7 +570,7 @@
 				title: "大型涡轮机制"
 				type: "checkmark"
 			}]
-			x: 3.63d
+			x: 3.97d
 			y: 1.98d
 		}
 		{
@@ -579,6 +581,9 @@
 				"它们还引入了机器模式——根据配置的机器模式，多方块结构会使用不同的配方处理材料。你可以通过在机器的GUI中点击机械臂按钮来更改。"
 				"{@pagebreak}"
 				"当你的GCYM多方块有了并行控制仓之后，它们就有了并行处理的能力。有4个等级的仓，每个都会将并行处理能力在前一等级的基础上乘4。"
+				"{@pagebreak}"
+				"多方块结构的批处理模式可以把多个同样的配方并入一个最多5秒的配方。这不会像超频一样改变一个配方的整体速度，但可以有效阻止机器一直闪来闪去。"
+				"这个不仅限于GCYM，但在它们身上格外有用。"
 			]
 			icon: "gtceu:mega_blast_furnace"
 			id: "57DE7059D524FAE9"
@@ -588,7 +593,7 @@
 				title: "GCYM"
 				type: "checkmark"
 			}]
-			x: 4.62d
+			x: 4.95d
 			y: 1.98d
 		}
 		{
@@ -610,7 +615,7 @@
 				type: "checkmark"
 			}]
 			title: "并行处理"
-			x: 5.61d
+			x: 5.94d
 			y: 1.98d
 		}
 		{
@@ -742,6 +747,22 @@
 			}]
 			x: 5.94d
 			y: 0.0d
+		}
+		{
+			dependencies: ["5AD9884E7BFB2510"]
+			description: ["把&3输入总线&r和&3仓&r喷成同一个颜色就可以把它们当成&5多方块结构&r里的同一个&3仓&r对待。当&3总线/仓&r的隔离模式打开后，&5多方块结构&r就只会搜索从一个颜色组中获取原料的配方。"]
+			icon: "gtceu:cyan_dye_spray_can"
+			id: "57EC19AF87A32930"
+			size: 0.66d
+			subtitle: "Color by number multiblocks"
+			tasks: [{
+				id: "5F4FB0D81F0772F9"
+				title: "Colored Buses"
+				type: "checkmark"
+			}]
+			title: "Colored Buses"
+			x: 3.0d
+			y: 1.98d
 		}
 	]
 	subtitle: ["给现代的方块人"]

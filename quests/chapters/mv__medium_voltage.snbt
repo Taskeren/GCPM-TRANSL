@@ -29,14 +29,15 @@
 				""
 				"你需要阅读&9蒸馏&r任务来全面了解······"
 				"{@pagebreak}"
-				"有些配方可以用&b氮气&r来倍速，但对于现在还不太值，但氮最终会变成不限量的。"
 				""
-				"你可以只用一个&3LV能源仓&r再加上超导就可以提供稳定的&d64EU/t&r了。此外，&3白铜线圈&r在起步的时候很完美，但是最后你肯定想把它升级到&b坎塔尔&r的。"
+				"&9注意：&r它&d40EU/t&r的配方需要1个&bMV&r能源仓或者2个&7LV&r能源仓。多方块结构&c不会&r接收某个电压等级的2A来达到下一等级以满足配方的电压需要。"
+				""
+				"换句话来说，控制器需要GUI最低显示“&bMV&r”之后，才能运行EMI中所说的“&bMV&r”配方，即使它们可以在较低电压的配置下获取足够的EU/t。积极来看，如果你使用2个&7LV&r仓的话，你可以选择只为其中一个供能，而不连接另一个——只要你供给了足够多EU的话。"
 				""
 				"{@pagebreak}"
-				"&9&l注意：&r&l植物路径是通往&9&l乙烯&r&l（对于进入&6HV&r&l是必需的）的路径之一，另一个与石油有关。&r"
+				"如果你用酿造室的话，热解炉是&d可选&r的，但它的产能和副产都很好，我们十分推荐你试一下。"
 				""
-				"热解炉是&d可选&r的，但它的产能和副产都很好，我们十分推荐你试一下。"
+				"有些配方可以用&b氮气&r来倍速，但对于现在还不太值，但氮最终会变成不限量的。"
 				""
 				"&l&3小知识：&r&o在GT5u中，热解炉的结构是里面只有9个线圈的大箱子。由于没有EMI预览，玩家经常要花很长时间来找到结构上的问题。"
 			]
@@ -85,7 +86,7 @@
 				"{@pagebreak}"
 				"&l&3小知识：&r&o植物球和生物糠源于IC2。在IC2实验性中，这个把生物质变成沼气的麻烦过程要很多投入之后才能回本。"
 			]
-			icon: "gtceu:plant_ball"
+			icon: "gtceu:biomass_bucket"
 			id: "6EB68C28BEE24DEF"
 			rewards: [{
 				id: "55B6D1599E7C55B1"
@@ -105,7 +106,8 @@
 			y: -1.875d
 		}
 		{
-			dependencies: ["648BCF486E16CCB2"]
+			dependencies: ["74180AC57AE9F0FE"]
+			dependency_requirement: "one_started"
 			description: [
 				"标题注：酒厂和酿造室的英文都是Brewery，而GT6的发酵器可以酿酒。"
 				""
@@ -127,7 +129,8 @@
 				random_bonus: 31
 				type: "item"
 			}]
-			size: 0.66d
+			shape: "square"
+			size: 0.75d
 			subtitle: "*hic*... *hic*"
 			tasks: [
 				{
@@ -229,11 +232,15 @@
 				}
 			]
 			title: "石脑油"
-			x: -1.125d
-			y: -4.125d
+			x: -4.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["6238B2A7ED1BE5A1"]
+			dependencies: [
+				"6238B2A7ED1BE5A1"
+				"035CF39E6CC98B77"
+			]
+			dependency_requirement: "one_completed"
 			description: [
 				"不要害怕！我们做完它就能马上获得烃了。"
 				""
@@ -247,6 +254,7 @@
 			]
 			icon: "gtceu:severely_steam_cracked_naphtha_bucket"
 			id: "3E2E161F8CE35138"
+			progression_mode: "linear"
 			size: 0.66d
 			subtitle: "燃油和石油裂化可以很复杂······"
 			tasks: [{
@@ -255,7 +263,7 @@
 				type: "item"
 			}]
 			title: "燃油裂化"
-			x: 0.0d
+			x: -4.5d
 			y: -4.125d
 		}
 		{
@@ -362,7 +370,6 @@
 				""
 				"更高级的变压器需要&9线圈&r。"
 			]
-			hide_dependency_lines: true
 			icon: "gtceu:mv_transformer_1a"
 			id: "6C20A9A64C1BE0BF"
 			size: 0.75d
@@ -373,8 +380,8 @@
 				type: "item"
 			}]
 			title: "变压器"
-			x: 2.25d
-			y: 1.5d
+			x: 0.0d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -614,7 +621,7 @@
 				type: "item"
 			}]
 			title: "钢合金"
-			x: 1.125d
+			x: 2.25d
 			y: 2.625d
 		}
 		{
@@ -719,8 +726,8 @@
 				type: "item"
 			}]
 			title: "进阶切割机"
-			x: 2.25d
-			y: 2.625d
+			x: 3.375d
+			y: 3.75d
 		}
 		{
 			dependencies: [
@@ -843,7 +850,7 @@
 			}]
 			title: "温室"
 			x: 0.0d
-			y: 2.625d
+			y: -1.875d
 		}
 		{
 			dependencies: [
@@ -909,7 +916,6 @@
 		{
 			dependencies: [
 				"10FB27DD3C7BEC2F"
-				"75F38905DEA60F15"
 				"1C55AE6AD5BDE304"
 			]
 			description: ["一个电子元件，得益于&3MV组装机&r和崭新的&3坎塔尔电力高炉&r，你可以制作它了。"]
@@ -1132,6 +1138,7 @@
 				"4600221BF0A30C3A"
 				"6E9E15DA847DD0A1"
 				"0DE5C3FBC9A6A690"
+				"375684F9CBEF9132"
 			]
 			description: [
 				"&6最好的LV电路&r！你可以从现在开始批量生产了，因为在之后的游戏中你会一直用它。"
@@ -1159,6 +1166,7 @@
 				"4600221BF0A30C3A"
 				"0DE5C3FBC9A6A690"
 				"6E9E15DA847DD0A1"
+				"375684F9CBEF9132"
 			]
 			description: [
 				"&6最好的MV电路&r！你会为了游戏的完整性来制作它。"
@@ -1176,8 +1184,8 @@
 				type: "item"
 			}]
 			title: "最好的MV电路"
-			x: 7.875d
-			y: 1.5d
+			x: 9.0d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -1201,8 +1209,8 @@
 				type: "item"
 			}]
 			title: "首个EV电路！"
-			x: 7.875d
-			y: 3.75d
+			x: 11.25d
+			y: -0.75d
 		}
 		{
 			dependencies: [
@@ -1212,7 +1220,7 @@
 			description: [
 				"更好的&6HV&r电路——比起前一级更&6便宜&r好做了。"
 				""
-				"你现在应该&a准备进入&rHV章节了，除非你准备提高发电量。"
+				"在你进入&6HV&r之前，确保你进行了规模化产能，并且用AE2自动化了最重要的生产过程。"
 			]
 			icon: "gtceu:micro_processor_assembly"
 			id: "5063FDFFBE3E4855"
@@ -1225,19 +1233,17 @@
 				type: "item"
 			}]
 			title: "更多HV电路"
-			x: 7.875d
-			y: 2.625d
+			x: 10.125d
+			y: -0.75d
 		}
 		{
-			dependencies: [
-				"375684F9CBEF9132"
-				"10FB27DD3C7BEC2F"
-			]
+			dependencies: ["10FB27DD3C7BEC2F"]
 			description: [
 				"一个电子元件，得益于&3MV组装机&r，你可以制作它了！"
 				""
 				"电容经常用于在计算机断电的时候储存信息，但这只是它各种用途中的一个。"
 			]
+			hide_dependency_lines: true
 			icon: "gtceu:capacitor"
 			id: "6E9E15DA847DD0A1"
 			shape: "square"
@@ -1249,7 +1255,7 @@
 				type: "item"
 			}]
 			title: "电容"
-			x: 7.875d
+			x: 9.0d
 			y: -1.875d
 		}
 		{
@@ -1275,7 +1281,7 @@
 				random_bonus: 7
 				type: "item"
 			}]
-			size: 0.66d
+			size: 0.75d
 			subtitle: "You're blue now... that's my alloy"
 			tasks: [{
 				id: "15C7369398FAB8DB"
@@ -1283,16 +1289,17 @@
 				type: "item"
 			}]
 			title: "蓝色合金"
-			x: 6.75d
-			y: 3.75d
+			x: 11.25d
+			y: -1.875d
 		}
 		{
-			dependencies: ["6E9E15DA847DD0A1"]
+			dependencies: ["10FB27DD3C7BEC2F"]
 			description: [
 				"一个电子元件，得益于&3MV组装机&r，你可以制作它了。"
 				""
 				"如果你想让它便宜一点，可以做&a镍锌铁氧体&r。"
 			]
+			hide_dependency_lines: true
 			icon: "gtceu:inductor"
 			id: "3DFFA8F91452C62A"
 			shape: "square"
@@ -1304,8 +1311,8 @@
 				type: "item"
 			}]
 			title: "电感"
-			x: 9.0d
-			y: 0.375d
+			x: 10.125d
+			y: -1.875d
 		}
 		{
 			dependencies: ["6BB98D128822730E"]
@@ -1318,6 +1325,9 @@
 				""
 				"&a聚乙烯（PE）&r是解锁&6许多新东西&r的钥匙。它大多都是以&d片&r或者&d流体&r的形式使用。"
 				""
+				"此外，一些配方也更有效率了！查看二极管和机器外壳吧（&8LV&r和&bMV&r）。"
+				""
+				"{@pagebreak}"
 				"&l&3小知识：&r&o在1.12.2的GTCEu中为了和其他模组兼容，聚乙烯的矿物词典名和流体名称都是&o塑料&r。"
 			]
 			icon: "gtceu:polyethylene_plate"
@@ -1345,13 +1355,14 @@
 			description: [
 				"&a样板&r可以用于AE2的自动合成。&a聚氯乙烯&r可以有&64倍&r产率，而且更高级的塑料有更高的产率。"
 				""
-				"&3分子装配室&r对于最近一段时间还不能获得，但你依然可以用&9ME接口&r来自动化。"
+				"但你先不要太激动——AE2自动合成首先就需要一些&d硅锭&r。"
 				""
 				"一个关于自动合成的小提示······虽然AE2可以自动按需进行链式生产，但这在更高等级的时候一定会反噬你的。我们强烈建议你尽量在所有地方自动生产。"
 			]
 			icon: "ae2:blank_pattern"
 			id: "1C036BCB2C488CFF"
-			size: 0.66d
+			shape: "square"
+			size: 0.75d
 			subtitle: "自动合成，终于！"
 			tasks: [{
 				id: "032C24CBA8687E72"
@@ -1360,7 +1371,7 @@
 			}]
 			title: "样板"
 			x: 5.625d
-			y: -4.125d
+			y: -3.0d
 		}
 		{
 			dependencies: ["10FB27DD3C7BEC2F"]
@@ -1438,7 +1449,7 @@
 			]
 			title: "塑料电路基板"
 			x: 7.875d
-			y: -3.0d
+			y: -1.875d
 		}
 		{
 			dependencies: [
@@ -1516,8 +1527,8 @@
 				type: "item"
 			}]
 			title: "硫酸"
-			x: 1.125d
-			y: -4.125d
+			x: 4.5d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1539,7 +1550,8 @@
 			]
 			icon: "gtceu:hydrochloric_acid_bucket"
 			id: "64CACABB48635904"
-			size: 0.66d
+			shape: "square"
+			size: 0.75d
 			subtitle: "你会需要一大堆。"
 			tasks: [{
 				id: "34147C1DD7B8DE55"
@@ -1547,8 +1559,8 @@
 				type: "item"
 			}]
 			title: "盐酸"
-			x: 3.375d
-			y: -4.125d
+			x: 2.25d
+			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1732,11 +1744,11 @@
 				type: "item"
 			}]
 			title: "流体钻机"
-			x: -1.125d
-			y: 0.375d
+			x: -2.25d
+			y: -0.75d
 		}
 		{
-			dependencies: ["648BCF486E16CCB2"]
+			dependencies: ["74180AC57AE9F0FE"]
 			description: [
 				"拿任何一种&3泵&r，把它放在油泉上之后······给它一点能量。"
 				""
@@ -1762,7 +1774,8 @@
 			]
 			icon: "gtceu:oil_bucket"
 			id: "0774EC59CD3DD7A5"
-			size: 0.66d
+			shape: "square"
+			size: 0.75d
 			subtitle: "挖到过油泉吗？"
 			tasks: [
 				{
@@ -1824,12 +1837,12 @@
 					type: "item"
 				}
 			]
-			title: "美军"
-			x: -1.125d
+			title: "美国模拟器"
+			x: -3.375d
 			y: -0.75d
 		}
 		{
-			dependencies: ["648BCF486E16CCB2"]
+			dependencies: ["74180AC57AE9F0FE"]
 			description: [
 				"你在地底下可能遇到过纯油砂矿脉。你可以&3离心&r粉来获得&a石油&r。"
 				""
@@ -1851,7 +1864,8 @@
 				random_bonus: 3
 				type: "item"
 			}]
-			size: 0.66d
+			shape: "square"
+			size: 0.75d
 			subtitle: "本条任务由美军赞助"
 			tasks: [
 				{
@@ -1873,17 +1887,17 @@
 					type: "item"
 				}
 			]
-			title: "美国模拟器"
-			x: -2.25d
+			title: "美洲模拟器"
+			x: -4.5d
 			y: -0.75d
 		}
 		{
 			dependencies: [
-				"53DC6E32C41C94C3"
-				"6EB68C28BEE24DEF"
 				"0774EC59CD3DD7A5"
 				"575B07D390D9D079"
 				"05ADBAE5B6F38956"
+				"37AAB88A9EDCC862"
+				"6EB68C28BEE24DEF"
 			]
 			description: [
 				"在开始之前，你需要考虑一下怎么获得乙烯："
@@ -1916,8 +1930,8 @@
 				item: "gtceu:basic_electronic_circuit"
 				type: "item"
 			}]
-			shape: "square"
-			size: 0.75d
+			shape: "gear"
+			size: 1.1d
 			subtitle: "自由选择的幻像"
 			tasks: [{
 				id: "685043442271A0D0"
@@ -1941,7 +1955,7 @@
 				type: "item"
 			}]
 			title: "蒸馏室"
-			x: -1.125d
+			x: -3.375d
 			y: -1.875d
 		}
 		{
@@ -2007,8 +2021,8 @@
 				type: "item"
 			}]
 			title: "苯教"
-			x: -2.25d
-			y: -1.875d
+			x: -3.375d
+			y: -3.0d
 		}
 		{
 			dependencies: ["6A304E453D74C57C"]
@@ -2023,7 +2037,7 @@
 				""
 				"&a轻燃油&r是一个不错的&9能源&r选项，但还有更好的······看看左边的任务吧。"
 			]
-			icon: "gtceu:lightly_hydro_cracked_heavy_fuel_bucket"
+			icon: "gtceu:light_fuel_bucket"
 			id: "61972B16805FC9EE"
 			size: 0.66d
 			subtitle: "宝贝，把灯打开"
@@ -2041,8 +2055,8 @@
 				}
 			]
 			title: "轻燃油"
-			x: -1.125d
-			y: -3.0d
+			x: -5.625d
+			y: -1.875d
 		}
 		{
 			dependencies: ["61972B16805FC9EE"]
@@ -2087,8 +2101,8 @@
 				type: "item"
 			}]
 			title: "柴油教"
-			x: -2.25d
-			y: -3.0d
+			x: -6.75d
+			y: -1.875d
 		}
 		{
 			dependencies: ["1FFD2242B94A7378"]
@@ -2128,8 +2142,8 @@
 				type: "item"
 			}]
 			title: "多频道管道"
-			x: 4.5d
-			y: -4.125d
+			x: 2.25d
+			y: -1.875d
 		}
 		{
 			dependencies: ["315169840E06110F"]
@@ -2142,7 +2156,8 @@
 			]
 			icon: "gtceu:ilc_chip"
 			id: "6F6D2829FC42F21C"
-			size: 0.66d
+			shape: "square"
+			size: 0.75d
 			subtitle: "I C U"
 			tasks: [
 				{
@@ -2265,8 +2280,8 @@
 				}
 			]
 			title: "长距离流体"
-			x: -3.375d
-			y: -0.75d
+			x: -4.5d
+			y: 0.375d
 		}
 		{
 			dependencies: ["682C26579EDDCA76"]
@@ -2296,8 +2311,8 @@
 				type: "item"
 			}]
 			title: "旅行锚"
-			x: 1.125d
-			y: 3.75d
+			x: 2.25d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -2325,8 +2340,8 @@
 				type: "item"
 			}]
 			title: "我相信我会飞"
-			x: -0.5854591836734713d
-			y: -4.789540816326532d
+			x: -5.625d
+			y: -0.75d
 		}
 		{
 			dependencies: ["75F38905DEA60F15"]
@@ -2411,6 +2426,102 @@
 			title: "200IQ"
 			x: -1.123469387755101d
 			y: 2.445153061224488d
+		}
+		{
+			dependencies: ["7567E885B7166603"]
+			description: [
+				"欢迎来到首个向&b烃&r进发的冒险！你可能已经听说过其中一些的名字，比如汽油、塑料、酒精······而在格雷科技，你将要大批量制作它们，以及更多！这个主题可能是是会让你疑惑，所以你应该仔细阅读来避免迷失于琐碎之中。现在······"
+				"{@pagebreak}"
+				"目前在&bMV&r，制作烃类主要有两个目标——产能和塑料。这里有两条你可以采用的途径：&6石油化工&r和&a生物化学&r。它们都有各自的利弊——石油化工有&9更高的产率&r以及&b能源效率&r，而生物化学是完全&d可再生&r的。你的产能和塑料来源完全&b取决于你&r。"
+				"{@pagebreak}"
+				"准备好深入一点了吗？&6石化&r路径在这个任务的左侧——你有三个选项。如果你是园艺爱好者，&2生化&r路径在斜向右的方向。祝你好运！"
+			]
+			icon: "gtceu:polyethylene_nugget"
+			id: "74180AC57AE9F0FE"
+			shape: "square"
+			size: 0.75d
+			subtitle: "变得工业化"
+			tasks: [{
+				id: "093E71F51E1ECA6F"
+				title: "烃"
+				type: "checkmark"
+			}]
+			x: -1.125d
+			y: -0.75d
+		}
+		{
+			dependencies: ["6A304E453D74C57C"]
+			description: [
+				"如果你试图把原油蒸馏成&e轻燃油、重燃油&r等等。你可能已经意识到了这是不可能的。相反，你会获得它的&6含硫&r版本。真可恶！"
+				""
+				"想要解决这个问题需要把它&6去硫&r。把你所想去硫的任何东西和&9氢气&r在&3化学反应釜&r中组合，就可以得到纯净的产物了，还有&a硫化氢&r作为副产。这样如何呀？"
+				"{@pagebreak}"
+				""
+				"幸运的是，&a硫化氢&r可以在&3电解机&r里被完美&d循环&r。"
+				""
+				"你只需要把&3化学反应釜&r和&3电解机&r挨着放在一起就可以轻松自动化了。确保&c打开从输出面输入&r。我们仁慈地提供了一个&3流体过滤卡&r，这样你已去硫的战利品就不会进入电解机了——记得把它设置成过滤输入/输出来让正确的流体在二者间流转！"
+				""
+				"{@pagebreak}"
+				"但现在我们如何把这些精炼的东西弄出&3化学反应釜&r呢？这就是电动泵出场之时——把它放在化学反应釜的另一个面就可以抽取你的战利品了！"
+				""
+				"&l&b小提醒：&r&r你只需要两桶&9氢气&r。获取他最简单的方法就是电解水。你不需要大规模生产氢（目前），不必担心！"
+			]
+			icon: "gtceu:sulfur_dust"
+			id: "5898743D8D6C2690"
+			rewards: [{
+				id: "7252A11E3828603C"
+				item: "gtceu:fluid_filter"
+				type: "item"
+			}]
+			shape: "square"
+			size: 0.75d
+			subtitle: "服务员！为什么我的汤里有硫？"
+			tasks: [{
+				id: "3F4C5D4741ABEE3C"
+				item: "gtceu:hydrogen_bucket"
+				type: "item"
+			}]
+			title: "去硫"
+			x: -4.5d
+			y: -1.875d
+		}
+		{
+			dependencies: ["5898743D8D6C2690"]
+			description: [
+				"重燃油可以从多种途径获得，但最好的方式是蒸馏&e重油&r。"
+				""
+				"你可以单纯地把它用在燃烧发电机中来&9产能&r，但它还有更厉害的用途······看看左边的任务吧。"
+			]
+			id: "035CF39E6CC98B77"
+			progression_mode: "linear"
+			size: 0.666d
+			subtitle: "这附近的事情变得愈加沉重起来了······"
+			tasks: [{
+				id: "4BA6939D643E63A6"
+				item: "gtceu:heavy_fuel_bucket"
+				type: "item"
+			}]
+			title: "重燃油"
+			x: -5.625d
+			y: -3.0d
+		}
+		{
+			dependencies: ["53DC6E32C41C94C3"]
+			description: [
+				"这是通过&a生化&r路径&9产能&r的主要方式。把原木放进&3热解炉&r来获得&9木焦油&r。你获得的木炭可以随后在&3提取机&r里处理成更多的&9木焦油&r！"
+				""
+				"检查蒸馏任务来看看你可以用这个美妙的物质做什么吧。"
+			]
+			id: "37AAB88A9EDCC862"
+			size: 0.66d
+			tasks: [{
+				id: "7EC058F5FE8478D1"
+				item: "gtceu:wood_tar_bucket"
+				type: "item"
+			}]
+			title: "木焦油"
+			x: -2.25d
+			y: -1.875d
 		}
 	]
 	subtitle: ["开展石化并改良电路"]
